@@ -6,7 +6,6 @@ while True:
     number1 = float(input('Введите число:'))
     operation = input('Действие:')
     number2 = float(input('Введите число:'))
-
     if operation == '+':
         print(number1 + number2)
         print(num2words((number1 + number2), lang='ru'))
