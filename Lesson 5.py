@@ -1,11 +1,13 @@
 from num2words import num2words
 print("Простой калькулятор на Python 2.0")
 i = 0
+
 while True:
     print('Введите необходимую операцию \n' + '(сложение- "+", вычитание - "-", умножение - "*", деление - "/", возведение в степень - "**"):\n')
     number1 = float(input('Введите число:'))
     operation = input('Действие:')
     number2 = float(input('Введите число:'))
+
     if operation == '+':
         print(number1 + number2)
         print(num2words((number1 + number2), lang='ru'))
