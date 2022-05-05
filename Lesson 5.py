@@ -9,27 +9,27 @@ while True:
     number2 = float(input('Введите число:'))
 
     if operation == '+':
-        print(number1 + number2)
-        print(num2words((number1 + number2), lang='ru'))
+        addition =number1 + number2
+        print(addition, (num2words((addition), lang='ru')))
         i = i + 1
     elif operation == '-':
-        print(number1 - number2)
-        print(num2words((number1 - number2), lang='ru'))
+        subtraction = number1 - number2
+        print(subtraction, (num2words((subtraction), lang='ru')))
         i = i + 1
     elif operation == '*':
-        print(number1 * number2)
-        print(num2words((number1 * number2), lang='ru'))
+        multiply = number1 * number2
+        print(multiply,(num2words((multiply), lang='ru')))
         i = i + 1
     elif operation == '/':
         if number2 != 0:
-            print(number1 / number2)
-            print(num2words((number1 / number2), lang='ru'))
+            division = number1 / number2
+            print(division, (num2words((division), lang='ru')))
             i = i + 1
         else:
             print('Ошибка: деление на ноль')
     elif operation == '**':
-        print(number1 ** number2)
-        print(num2words((number1 ** number2), lang='ru'))
+        power = number1 ** number2
+        print(power, (num2words((power), lang='ru')))
         i = i + 1
     else:
         print('Некорректно введены данные')
