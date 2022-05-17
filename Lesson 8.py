@@ -1,11 +1,12 @@
-print('Задача 1:')
+from abc import ABC, abstractmethod
+print('Задача 1:"ф')
 print()
-class Animal:
+class Animal(ABC):
     name: str
 
     def __init__(self, name):
         self.name = name
-
+    @abstractmethod
     def says(self):
         pass
 
@@ -38,11 +39,11 @@ print('Задача 2:')
 print()
 from math import *
 
-class Shape:
-
+class Shape(ABC):
+    @abstractmethod
     def get_perimeter(self):
         raise NotImplemented
-
+    @abstractmethod
     def get_square(self):
         raise NotImplemented
 
